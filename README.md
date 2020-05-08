@@ -127,7 +127,7 @@ Save as "Google Analytics - Page View"
 
   |     Name     |               Value              |
   |--------------|----------------------------------|
-  | Category     | Ecommerce                        |
+  | Category     | Enhanced Ecommerce               |
   | Action       | {{Event}}                        |
   
 Choose the Triggers:
