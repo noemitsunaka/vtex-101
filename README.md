@@ -47,4 +47,4 @@ Example: A customer finds your e-commerce by clicking on a Facebook ad. Later, s
 
 On Google Analytics, the attribution will be to Direct channel because the last touchpoint before conversion was herself directly going to the website and buying something.
 
-VTEX and Google Analytics have difference in the expiration time of the cookies, that's why sometimes the traffic sources won't match.
+VTEX cookies' expire earlier that Google Analytics, that's why sometimes the traffic sources won't match.
