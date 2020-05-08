@@ -123,7 +123,7 @@ Save as "Google Analytics - Page View"
 
 #### Enhanced Ecommerce
 
-* "Tags" > "New" > "Tag Configuration" > "Google Analytics - Universal Analytics" > Choose Track Type "Event"
+"Tags" > "New" > "Tag Configuration" > "Google Analytics - Universal Analytics" > Choose Track Type "Event"
 
   |     Name     |               Value              |
   |--------------|----------------------------------|
