@@ -5,11 +5,14 @@ Track and analyze the customer's steps on Google Analytics and evaluate your use
 
 You can try to add it with a template: https://analytics.google.com/analytics/web/template?uid=tTp2GkIJRiGodszJbq8RsA
 
-Or you can use a simple Regex to configure mannualy the sales funnel.
+Or you can use a simple Regex to configure mannualy the sales funnel:
 
 * Administrator > Select "Goals"
+
 * Goal Setup > Select "Custom"
+
 * Goal Description > Destination > Select "regular expression"
+
 * Complete with the regular expressions below.
 
 ### Sales Funnel Regex
@@ -48,3 +51,30 @@ Example: A customer finds your e-commerce by clicking on a Facebook ad. Later, s
 On Google Analytics, the attribution will be to Direct channel because the last touchpoint before conversion was herself directly going to the website and buying something.
 
 VTEX cookies' expire earlier than Google Analytics, that's why sometimes the traffic sources won't match.
+
+##  How to configure Google Tag Manager on a VTEX IO store?
+
+### Variables
+
+* Variables > User-defined variables > New
+
+#### Data Layer
+
+* Variable Configuration > "Data Layer Variable" > write "userID" in "Data Layer Variable Name" > Save as "Data Layer Variable - userID"
+
+* Variable Configuration > "Data Layer Variable" > write "campaignMedium" in "Data Layer Variable Name" > Save as "Data Layer Variable - campaignMedium"
+
+* Variable Configuration > "Data Layer Variable" > write "campaignName" in "Data Layer Variable Name" > Save as "Data Layer Variable - campaignName"
+
+#### Google Analytics
+
+* Variable Configuration > "Google Analytics Settings" > Place your Tracking ID
+
+* Ecommerce > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as Google Analytics
+
+* "Fields to Set" > "Add Field":
+
+  | "userId" | "{{userId}}" |
+  |----------|--------------|
+
+#### 
