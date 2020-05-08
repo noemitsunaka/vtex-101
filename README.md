@@ -56,25 +56,89 @@ VTEX cookies' expire earlier than Google Analytics, that's why sometimes the tra
 
 ### Variables
 
-* Variables > User-defined variables > New
+* "Variables" > "User-defined variables" > "New"
 
-#### Data Layer
+#### Data Layer Variables
 
-* Variable Configuration > "Data Layer Variable" > write "userID" in "Data Layer Variable Name" > Save as "DL Variable - userID"
+"Variable Configuration" > "Data Layer Variable":
 
-* Variable Configuration > "Data Layer Variable" > write "campaignMedium" in "Data Layer Variable Name" > Save as "DL Variable - campaignMedium"
+* Write "userID" in "Data Layer Variable Name" > Save as "DL Variable - userID"
 
-* Variable Configuration > "Data Layer Variable" > write "campaignName" in "Data Layer Variable Name" > Save as "DL Variable - campaignName"
+* Write "campaignMedium" in "Data Layer Variable Name" > Save as "DL Variable - campaignMedium"
 
-#### Google Analytics
+* Write "campaignName" in "Data Layer Variable Name" > Save as "DL Variable - campaignName"
 
-* Variable Configuration > "Google Analytics Settings" > Place your "Tracking ID"
+#### Google Analytics Settings
 
-* Ecommerce > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as "Google Analytics"
+* "Variable Configuration" > "Google Analytics Settings" > Place your "Tracking ID"
+
+* "Ecommerce" > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as "Google Analytics"
 
 * "Fields to Set" > "Add Field":
 
-  | "userId" | "{{userId}}" |
-  |----------|--------------|
+  |  Name  |    Value   |
+  |--------|------------|
+  | userId | {{userId}} |
 
-#### 
+* Variable Configuration > "Google Analytics Settings" > Place your "Tracking ID" > "More Settings"
+
+* "Fields to Set" > "Add Field":
+
+  |     Name       |               Value              |
+  |----------------|----------------------------------|
+  |  campaignName  | {{DL Varibale - campaignName}}   |
+  | campaignMedium | {{DL Varibale - campaignMedium}} |
+  | campaignSource | {{DL Varibale - campaignSource}} |
+
+* "Ecommerce" > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as "Google Analytics - Checkout"
+
+### Triggers
+
+Create different events following the path:
+
+"Trigger Configuration" > "Custom Event"
+
+* Save as "CE - addToCart"
+* Save as "CE - email"
+* Save as "CE - orderPlaced"
+* Save as "CE - payment"
+* Save as "CE - productDetail"
+* Save as "CE - productImpression"
+* Save as "CE - profile"
+* Save as "CE - shipping"
+
+### Tags
+
+#### Enhanced Ecommerce
+
+* "Tags" > "New" > "Tag Configuration" > "Google Analytics - Universal Analytics" > Choose Track Type "Event"
+
+  |     Name     |               Value              |
+  |--------------|----------------------------------|
+  | Category     | Ecommerce                        |
+  | Action       | {{Event}}                        |
+  
+Choose the Triggers:
+
+* "CE - addToCart"
+* "CE - email"
+* "CE - orderPlaced"
+* "CE - payment"
+* "CE - productDetail"
+* "CE - productImpression"
+* "CE - profile"
+* "CE - shipping"
+
+Save as "Google Analytics - Enhanced Ecommerce"
+
+#### Pageviews
+
+Tag Configuration > Choose Track Type "Page View":
+
+* "Google Analytics Settings" > "{{Google Analytics}}"
+
+Choose the Trigger:
+
+* "All Pages"
+
+Save as "Google Analytics - Page View"
