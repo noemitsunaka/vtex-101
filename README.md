@@ -60,17 +60,17 @@ VTEX cookies' expire earlier than Google Analytics, that's why sometimes the tra
 
 #### Data Layer
 
-* Variable Configuration > "Data Layer Variable" > write "userID" in "Data Layer Variable Name" > Save as "Data Layer Variable - userID"
+* Variable Configuration > "Data Layer Variable" > write "userID" in "Data Layer Variable Name" > Save as "DL Variable - userID"
 
-* Variable Configuration > "Data Layer Variable" > write "campaignMedium" in "Data Layer Variable Name" > Save as "Data Layer Variable - campaignMedium"
+* Variable Configuration > "Data Layer Variable" > write "campaignMedium" in "Data Layer Variable Name" > Save as "DL Variable - campaignMedium"
 
-* Variable Configuration > "Data Layer Variable" > write "campaignName" in "Data Layer Variable Name" > Save as "Data Layer Variable - campaignName"
+* Variable Configuration > "Data Layer Variable" > write "campaignName" in "Data Layer Variable Name" > Save as "DL Variable - campaignName"
 
 #### Google Analytics
 
-* Variable Configuration > "Google Analytics Settings" > Place your Tracking ID
+* Variable Configuration > "Google Analytics Settings" > Place your "Tracking ID"
 
-* Ecommerce > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as Google Analytics
+* Ecommerce > "Enable Enhanced Ecommerce Features" > "Use data layer" > Save as "Google Analytics"
 
 * "Fields to Set" > "Add Field":
 
