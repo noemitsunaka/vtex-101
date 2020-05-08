@@ -109,6 +109,18 @@ Create different events following the path:
 
 ### Tags
 
+#### Pageviews
+
+Tag Configuration > Choose Track Type "Page View":
+
+* "Google Analytics Settings" > "{{Google Analytics}}"
+
+Choose the Trigger:
+
+* "All Pages"
+
+Save as "Google Analytics - Page View"
+
 #### Enhanced Ecommerce
 
 * "Tags" > "New" > "Tag Configuration" > "Google Analytics - Universal Analytics" > Choose Track Type "Event"
@@ -130,15 +142,3 @@ Choose the Triggers:
 * "CE - shipping"
 
 Save as "Google Analytics - Enhanced Ecommerce"
-
-#### Pageviews
-
-Tag Configuration > Choose Track Type "Page View":
-
-* "Google Analytics Settings" > "{{Google Analytics}}"
-
-Choose the Trigger:
-
-* "All Pages"
-
-Save as "Google Analytics - Page View"
